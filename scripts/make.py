@@ -16,7 +16,7 @@ import glob
 ############
 
 FREE_SPACE = 0xF00000
-REBUILD_ASSETS = False ##Temporary. To be shifted to config.txt
+REBUILD_ASSETS = True ##Temporary. To be shifted to config.txt
 BUNDLE_ASSETS = True ##Temporary. To be shifter to config.txt
 
 #############
