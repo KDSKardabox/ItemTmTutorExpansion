@@ -1,15 +1,10 @@
-#include "item_refs.h"
-#include "defines\types.h"
-#include "defines\items.h"
 #include "defines.h"
-#include "functions.h"
-#include "locations.h"
 
 
 struct ItemData item_table[ALL_ITEMS] =
-{    
+{
 	// 0.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -25,9 +20,9 @@ struct ItemData item_table[ALL_ITEMS] =
 		.battle_routine = NULL,
 		.extra_param = 0,
 	},
-	
+
 	// 1.
-	{    
+	{
 		.name = _("MASTER BALL"),
 		.index = ITEM_MASTER_BALL,
 		.market_price = 0,
@@ -44,7 +39,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 2.
-	{    
+	{
 		.name = _("ULTRA BALL"),
 		.index = ITEM_ULTRA_BALL,
 		.market_price = 1200,
@@ -60,9 +55,9 @@ struct ItemData item_table[ALL_ITEMS] =
 		.battle_routine = ItemUseInBattle_PokeBall,
 		.extra_param = 1,
 	},
-	
+
 	// 3.
-	{    
+	{
 		.name = _("GREAT BALL"),
 		.index = ITEM_GREAT_BALL,
 		.market_price = 600,
@@ -78,9 +73,9 @@ struct ItemData item_table[ALL_ITEMS] =
 		.battle_routine = ItemUseInBattle_PokeBall,
 		.extra_param = 2,
 	},
-	
+
 	// 4.
-	{    
+	{
 		.name = _("POKè BALL"),
 		.index = ITEM_POKE_BALL,
 		.market_price = 200,
@@ -97,7 +92,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 3,
 	},
 	// 5.
-	{    
+	{
 		.name = _("SAFARI BALL"),
 		.index = ITEM_SAFARI_BALL,
 		.market_price = 0,
@@ -114,7 +109,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 4,
 	},
 	// 6.
-	{    
+	{
 		.name = _("NET BALL"),
 		.index = ITEM_NET_BALL,
 		.market_price = 1000,
@@ -131,7 +126,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 5,
 	},
 	// 7.
-	{    
+	{
 		.name = _("DIVE BALL"),
 		.index = ITEM_DIVE_BALL,
 		.market_price = 1000,
@@ -147,9 +142,9 @@ struct ItemData item_table[ALL_ITEMS] =
 		.battle_routine = ItemUseInBattle_PokeBall,
 		.extra_param = 6,
 	},
-	
+
 	// 8.
-	{    
+	{
 		.name = _("NEST BALL"),
 		.index = ITEM_NEST_BALL,
 		.market_price = 1000,
@@ -166,7 +161,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 7,
 	},
 	// 9.
-	{    
+	{
 		.name = _("REPEAT BALL"),
 		.index = ITEM_REPEAT_BALL,
 		.market_price = 1000,
@@ -183,7 +178,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 8,
 	},
 	// 10.
-	{    
+	{
 		.name = _("TIMER BALL"),
 		.index = ITEM_TIMER_BALL,
 		.market_price = 1000,
@@ -200,7 +195,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 9,
 	},
 	// 11.
-	{    
+	{
 		.name = _("LUXURY BALL"),
 		.index = ITEM_LUXURY_BALL,
 		.market_price = 1000,
@@ -217,7 +212,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 10,
 	},
 	// 12.
-	{    
+	{
 		.name = _("PREMIER BALL"),
 		.index = ITEM_PREMIER_BALL,
 		.market_price = 200,
@@ -234,7 +229,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 11,
 	},
 	// 13.
-	{    
+	{
 		.name = _("POTION"),
 		.index = ITEM_POTION,
 		.market_price = 300,
@@ -251,7 +246,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 14.
-	{    
+	{
 		.name = _("ANTIDOTE"),
 		.index = ITEM_ANTIDOTE,
 		.market_price = 100,
@@ -268,7 +263,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 15.
-	{    
+	{
 		.name = _("BURN HEAL"),
 		.index = ITEM_BURN_HEAL,
 		.market_price = 250,
@@ -285,7 +280,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 16.
-	{    
+	{
 		.name = _("ICE HEAL"),
 		.index = ITEM_ICE_HEAL,
 		.market_price = 250,
@@ -302,7 +297,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 17.
-	{    
+	{
 		.name = _("AWAKENING"),
 		.index = ITEM_AWAKENING,
 		.market_price = 250,
@@ -319,7 +314,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 18.
-	{    
+	{
 		.name = _("PARLYZ HEAL"),
 		.index = ITEM_PARALYZE_HEAL,
 		.market_price = 200,
@@ -336,7 +331,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 19.
-	{    
+	{
 		.name = _("FULL RESTORE"),
 		.index = ITEM_FULL_RESTORE,
 		.market_price = 3000,
@@ -353,7 +348,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 20.
-	{    
+	{
 		.name = _("MAX POTION"),
 		.index = ITEM_MAX_POTION,
 		.market_price = 2500,
@@ -370,7 +365,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 21.
-	{    
+	{
 		.name = _("HYPER POTION"),
 		.index = ITEM_HYPER_POTION,
 		.market_price = 1200,
@@ -387,7 +382,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 22.
-	{    
+	{
 		.name = _("SUPER POTION"),
 		.index = ITEM_SUPER_POTION,
 		.market_price = 700,
@@ -404,7 +399,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 23.
-	{    
+	{
 		.name = _("FULL HEAL"),
 		.index = ITEM_FULL_HEAL,
 		.market_price = 600,
@@ -421,7 +416,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 24.
-	{    
+	{
 		.name = _("REVIVE"),
 		.index = ITEM_REVIVE,
 		.market_price = 1500,
@@ -438,7 +433,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 25.
-	{    
+	{
 		.name = _("MAX REVIVE"),
 		.index = ITEM_MAX_REVIVE,
 		.market_price = 4000,
@@ -455,7 +450,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 26.
-	{    
+	{
 		.name = _("FRESH WATER"),
 		.index = ITEM_FRESH_WATER,
 		.market_price = 200,
@@ -472,7 +467,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 27.
-	{    
+	{
 		.name = _("SODA POP"),
 		.index = ITEM_SODA_POP,
 		.market_price = 300,
@@ -489,7 +484,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 28.
-	{    
+	{
 		.name = _("LEMONADE"),
 		.index = ITEM_LEMONADE,
 		.market_price = 350,
@@ -506,7 +501,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 29.
-	{    
+	{
 		.name = _("MOOMOO MILK"),
 		.index = ITEM_MOOMOO_MILK,
 		.market_price = 500,
@@ -523,7 +518,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 30.
-	{    
+	{
 		.name = _("ENERGYPOWDER"),
 		.index = ITEM_ENERGY_POWDER,
 		.market_price = 500,
@@ -540,7 +535,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 31.
-	{    
+	{
 		.name = _("ENERGY ROOT"),
 		.index = ITEM_ENERGY_ROOT,
 		.market_price = 800,
@@ -557,7 +552,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 32.
-	{    
+	{
 		.name = _("HEAL POWDER"),
 		.index = ITEM_HEAL_POWDER,
 		.market_price = 450,
@@ -574,7 +569,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 33.
-	{    
+	{
 		.name = _("REVIVAL HERB"),
 		.index = ITEM_REVIVAL_HERB,
 		.market_price = 2800,
@@ -591,7 +586,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 34.
-	{    
+	{
 		.name = _("ETHER"),
 		.index = ITEM_ETHER,
 		.market_price = 1200,
@@ -608,7 +603,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 35.
-	{    
+	{
 		.name = _("MAX ETHER"),
 		.index = ITEM_MAX_ETHER,
 		.market_price = 2000,
@@ -625,7 +620,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 36.
-	{    
+	{
 		.name = _("ELIXIR"),
 		.index = ITEM_ELIXIR,
 		.market_price = 3000,
@@ -642,7 +637,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 37.
-	{    
+	{
 		.name = _("MAX ELIXIR"),
 		.index = ITEM_MAX_ELIXIR,
 		.market_price = 4500,
@@ -659,7 +654,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 38.
-	{    
+	{
 		.name = _("LAVA COOKIE"),
 		.index = ITEM_LAVA_COOKIE,
 		.market_price = 200,
@@ -676,7 +671,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 39.
-	{    
+	{
 		.name = _("BLUE FLUTE"),
 		.index = ITEM_BLUE_FLUTE,
 		.market_price = 100,
@@ -693,7 +688,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 40.
-	{    
+	{
 		.name = _("YELLOW FLUTE"),
 		.index = ITEM_YELLOW_FLUTE,
 		.market_price = 200,
@@ -710,7 +705,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 41.
-	{    
+	{
 		.name = _("RED FLUTE"),
 		.index = ITEM_RED_FLUTE,
 		.market_price = 300,
@@ -727,7 +722,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 42.
-	{    
+	{
 		.name = _("BLACK FLUTE"),
 		.index = ITEM_BLACK_FLUTE,
 		.market_price = 400,
@@ -744,7 +739,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 43.
-	{    
+	{
 		.name = _("WHITE FLUTE"),
 		.index = ITEM_WHITE_FLUTE,
 		.market_price = 500,
@@ -761,7 +756,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 44.
-	{    
+	{
 		.name = _("BERRY JUICE"),
 		.index = ITEM_BERRY_JUICE,
 		.market_price = 100,
@@ -778,7 +773,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 45.
-	{    
+	{
 		.name = _("SACRED ASH"),
 		.index = ITEM_SACRED_ASH,
 		.market_price = 200,
@@ -795,7 +790,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 46.
-	{    
+	{
 		.name = _("SHOAL SALT"),
 		.index = ITEM_SHOAL_SALT,
 		.market_price = 20,
@@ -812,7 +807,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 47.
-	{    
+	{
 		.name = _("SHOAL SHELL"),
 		.index = ITEM_SHOAL_SHELL,
 		.market_price = 20,
@@ -829,7 +824,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 48.
-	{    
+	{
 		.name = _("RED SHARD"),
 		.index = ITEM_RED_SHARD,
 		.market_price = 200,
@@ -846,7 +841,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 49.
-	{    
+	{
 		.name = _("BLUE SHARD"),
 		.index = ITEM_BLUE_SHARD,
 		.market_price = 200,
@@ -863,7 +858,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 50.
-	{    
+	{
 		.name = _("YELLOW SHARD"),
 		.index = ITEM_YELLOW_SHARD,
 		.market_price = 200,
@@ -880,7 +875,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 51.
-	{    
+	{
 		.name = _("GREEN SHARD"),
 		.index = ITEM_GREEN_SHARD,
 		.market_price = 200,
@@ -897,7 +892,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 52.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -914,7 +909,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 53.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -931,7 +926,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 54.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -948,7 +943,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 55.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -965,7 +960,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 56.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -982,7 +977,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 57.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -999,7 +994,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 58.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1016,7 +1011,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 59.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1033,7 +1028,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 60.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1050,7 +1045,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 61.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1067,7 +1062,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 62.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1084,7 +1079,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 63.
-	{    
+	{
 		.name = _("HP UP"),
 		.index = ITEM_HP_UP,
 		.market_price = 9800,
@@ -1101,7 +1096,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 64.
-	{    
+	{
 		.name = _("PROTEIN"),
 		.index = ITEM_PROTEIN,
 		.market_price = 9800,
@@ -1118,7 +1113,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 65.
-	{    
+	{
 		.name = _("IRON"),
 		.index = ITEM_IRON,
 		.market_price = 9800,
@@ -1135,7 +1130,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 66.
-	{    
+	{
 		.name = _("CARBOS"),
 		.index = ITEM_CARBOS,
 		.market_price = 9800,
@@ -1152,7 +1147,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 67.
-	{    
+	{
 		.name = _("CALCIUM"),
 		.index = ITEM_CALCIUM,
 		.market_price = 9800,
@@ -1169,7 +1164,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 68.
-	{    
+	{
 		.name = _("RARE CANDY"),
 		.index = ITEM_RARE_CANDY,
 		.market_price = 4800,
@@ -1186,7 +1181,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 69.
-	{    
+	{
 		.name = _("PP UP"),
 		.index = ITEM_PP_UP,
 		.market_price = 9800,
@@ -1203,7 +1198,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 70.
-	{    
+	{
 		.name = _("ZINC"),
 		.index = ITEM_ZINC,
 		.market_price = 9800,
@@ -1220,7 +1215,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 71.
-	{    
+	{
 		.name = _("PP MAX"),
 		.index = ITEM_PP_MAX,
 		.market_price = 9800,
@@ -1237,7 +1232,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 72.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1254,7 +1249,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 73.
-	{    
+	{
 		.name = _("GUARD SPEC."),
 		.index = ITEM_GUARD_SPEC,
 		.market_price = 700,
@@ -1271,7 +1266,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 74.
-	{    
+	{
 		.name = _("DIRE HIT"),
 		.index = ITEM_DIRE_HIT,
 		.market_price = 650,
@@ -1288,7 +1283,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 75.
-	{    
+	{
 		.name = _("X ATTACK"),
 		.index = ITEM_X_ATTACK,
 		.market_price = 500,
@@ -1305,7 +1300,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 76.
-	{    
+	{
 		.name = _("X DEFEND"),
 		.index = ITEM_X_DEFEND,
 		.market_price = 550,
@@ -1322,7 +1317,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 77.
-	{    
+	{
 		.name = _("X SPEED"),
 		.index = ITEM_X_SPEED,
 		.market_price = 350,
@@ -1339,7 +1334,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 78.
-	{    
+	{
 		.name = _("X ACCURACY"),
 		.index = ITEM_X_ACCURACY,
 		.market_price = 950,
@@ -1356,7 +1351,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 79.
-	{    
+	{
 		.name = _("X SPECIAL"),
 		.index = ITEM_X_SPECIAL,
 		.market_price = 350,
@@ -1373,7 +1368,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 80.
-	{    
+	{
 		.name = _("POKè DOLL"),
 		.index = ITEM_POKE_DOLL,
 		.market_price = 1000,
@@ -1390,7 +1385,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 81.
-	{    
+	{
 		.name = _("FLUFFY TAIL"),
 		.index = ITEM_FLUFFY_TAIL,
 		.market_price = 1000,
@@ -1407,7 +1402,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 82.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1424,7 +1419,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 83.
-	{    
+	{
 		.name = _("SUPER REPEL"),
 		.index = ITEM_SUPER_REPEL,
 		.market_price = 500,
@@ -1441,7 +1436,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 84.
-	{    
+	{
 		.name = _("MAX REPEL"),
 		.index = ITEM_MAX_REPEL,
 		.market_price = 700,
@@ -1458,7 +1453,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 85.
-	{    
+	{
 		.name = _("ESCAPE ROPE"),
 		.index = ITEM_ESCAPE_ROPE,
 		.market_price = 550,
@@ -1475,7 +1470,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 86.
-	{    
+	{
 		.name = _("REPEL"),
 		.index = ITEM_REPEL,
 		.market_price = 350,
@@ -1492,7 +1487,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 87.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1509,7 +1504,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 88.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1526,7 +1521,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 89.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1543,7 +1538,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 90.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1560,7 +1555,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 91.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1577,7 +1572,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 92.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1594,7 +1589,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 93.
-	{    
+	{
 		.name = _("SUN STONE"),
 		.index = ITEM_SUN_STONE,
 		.market_price = 2100,
@@ -1611,7 +1606,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 94.
-	{    
+	{
 		.name = _("MOON STONE"),
 		.index = ITEM_MOON_STONE,
 		.market_price = 0,
@@ -1628,7 +1623,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 95.
-	{    
+	{
 		.name = _("FIRE STONE"),
 		.index = ITEM_FIRE_STONE,
 		.market_price = 2100,
@@ -1645,7 +1640,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 96.
-	{    
+	{
 		.name = _("THUNDERSTONE"),
 		.index = ITEM_THUNDER_STONE,
 		.market_price = 2100,
@@ -1662,7 +1657,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 97.
-	{    
+	{
 		.name = _("WATER STONE"),
 		.index = ITEM_WATER_STONE,
 		.market_price = 2100,
@@ -1679,7 +1674,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 98.
-	{    
+	{
 		.name = _("LEAF STONE"),
 		.index = ITEM_LEAF_STONE,
 		.market_price = 2100,
@@ -1696,7 +1691,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 99.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1713,7 +1708,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 100.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1730,7 +1725,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 101.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1747,7 +1742,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 102.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1764,7 +1759,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 103.
-	{    
+	{
 		.name = _("TINYMUSHROOM"),
 		.index = ITEM_TINY_MUSHROOM,
 		.market_price = 500,
@@ -1781,7 +1776,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 104.
-	{    
+	{
 		.name = _("BIG MUSHROOM"),
 		.index = ITEM_BIG_MUSHROOM,
 		.market_price = 5000,
@@ -1798,7 +1793,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 105.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1815,7 +1810,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 106.
-	{    
+	{
 		.name = _("PEARL"),
 		.index = ITEM_PEARL,
 		.market_price = 1400,
@@ -1832,7 +1827,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 107.
-	{    
+	{
 		.name = _("BIG PEARL"),
 		.index = ITEM_BIG_PEARL,
 		.market_price = 7500,
@@ -1849,7 +1844,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 108.
-	{    
+	{
 		.name = _("STARDUST"),
 		.index = ITEM_STARDUST,
 		.market_price = 2000,
@@ -1866,7 +1861,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 109.
-	{    
+	{
 		.name = _("STAR PIECE"),
 		.index = ITEM_STAR_PIECE,
 		.market_price = 9800,
@@ -1883,7 +1878,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 110.
-	{    
+	{
 		.name = _("NUGGET"),
 		.index = ITEM_NUGGET,
 		.market_price = 10000,
@@ -1900,7 +1895,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 111.
-	{    
+	{
 		.name = _("HEART SCALE"),
 		.index = ITEM_HEART_SCALE,
 		.market_price = 100,
@@ -1917,7 +1912,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 112.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1934,7 +1929,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 113.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1951,7 +1946,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 114.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1968,7 +1963,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 115.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -1985,7 +1980,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 116.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -2002,7 +1997,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 117.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -2019,7 +2014,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 118.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -2036,7 +2031,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 119.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -2053,7 +2048,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 120.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -2070,7 +2065,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 121.
-	{    
+	{
 		.name = _("ORANGE MAIL"),
 		.index = ITEM_ORANGE_MAIL,
 		.market_price = 50,
@@ -2087,7 +2082,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 122.
-	{    
+	{
 		.name = _("HARBOR MAIL"),
 		.index = ITEM_HARBOR_MAIL,
 		.market_price = 50,
@@ -2104,7 +2099,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 1,
 	},
 	// 123.
-	{    
+	{
 		.name = _("GLITTER MAIL"),
 		.index = ITEM_GLITTER_MAIL,
 		.market_price = 50,
@@ -2121,7 +2116,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 2,
 	},
 	// 124.
-	{    
+	{
 		.name = _("MECH MAIL"),
 		.index = ITEM_MECH_MAIL,
 		.market_price = 50,
@@ -2138,7 +2133,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 3,
 	},
 	// 125.
-	{    
+	{
 		.name = _("WOOD MAIL"),
 		.index = ITEM_WOOD_MAIL,
 		.market_price = 50,
@@ -2155,7 +2150,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 4,
 	},
 	// 126.
-	{    
+	{
 		.name = _("WAVE MAIL"),
 		.index = ITEM_WAVE_MAIL,
 		.market_price = 50,
@@ -2172,7 +2167,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 5,
 	},
 	// 127.
-	{    
+	{
 		.name = _("BEAD MAIL"),
 		.index = ITEM_BEAD_MAIL,
 		.market_price = 50,
@@ -2189,7 +2184,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 6,
 	},
 	// 128.
-	{    
+	{
 		.name = _("SHADOW MAIL"),
 		.index = ITEM_SHADOW_MAIL,
 		.market_price = 50,
@@ -2206,7 +2201,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 7,
 	},
 	// 129.
-	{    
+	{
 		.name = _("TROPIC MAIL"),
 		.index = ITEM_TROPIC_MAIL,
 		.market_price = 50,
@@ -2223,7 +2218,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 8,
 	},
 	// 130.
-	{    
+	{
 		.name = _("DREAM MAIL"),
 		.index = ITEM_DREAM_MAIL,
 		.market_price = 50,
@@ -2240,7 +2235,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 9,
 	},
 	// 131.
-	{    
+	{
 		.name = _("FAB MAIL"),
 		.index = ITEM_FAB_MAIL,
 		.market_price = 50,
@@ -2257,7 +2252,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 10,
 	},
 	// 132.
-	{    
+	{
 		.name = _("RETRO MAIL"),
 		.index = ITEM_RETRO_MAIL,
 		.market_price = 0,
@@ -2274,7 +2269,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 11,
 	},
 	// 133.
-	{    
+	{
 		.name = _("CHERI BERRY"),
 		.index = ITEM_CHERI_BERRY,
 		.market_price = 20,
@@ -2291,7 +2286,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 134.
-	{    
+	{
 		.name = _("CHESTO BERRY"),
 		.index = ITEM_CHESTO_BERRY,
 		.market_price = 20,
@@ -2308,7 +2303,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 135.
-	{    
+	{
 		.name = _("PECHA BERRY"),
 		.index = ITEM_PECHA_BERRY,
 		.market_price = 20,
@@ -2325,7 +2320,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 136.
-	{    
+	{
 		.name = _("RAWST BERRY"),
 		.index = ITEM_RAWST_BERRY,
 		.market_price = 20,
@@ -2342,7 +2337,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 137.
-	{    
+	{
 		.name = _("ASPEAR BERRY"),
 		.index = ITEM_ASPEAR_BERRY,
 		.market_price = 20,
@@ -2359,7 +2354,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 138.
-	{    
+	{
 		.name = _("LEPPA BERRY"),
 		.index = ITEM_LEPPA_BERRY,
 		.market_price = 20,
@@ -2376,7 +2371,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 139.
-	{    
+	{
 		.name = _("ORAN BERRY"),
 		.index = ITEM_ORAN_BERRY,
 		.market_price = 20,
@@ -2393,7 +2388,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 140.
-	{    
+	{
 		.name = _("PERSIM BERRY"),
 		.index = ITEM_PERSIM_BERRY,
 		.market_price = 20,
@@ -2410,7 +2405,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 141.
-	{    
+	{
 		.name = _("LUM BERRY"),
 		.index = ITEM_LUM_BERRY,
 		.market_price = 20,
@@ -2427,7 +2422,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 142.
-	{    
+	{
 		.name = _("SITRUS BERRY"),
 		.index = ITEM_SITRUS_BERRY,
 		.market_price = 20,
@@ -2444,7 +2439,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 143.
-	{    
+	{
 		.name = _("FIGY BERRY"),
 		.index = ITEM_FIGY_BERRY,
 		.market_price = 20,
@@ -2461,7 +2456,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 144.
-	{    
+	{
 		.name = _("WIKI BERRY"),
 		.index = ITEM_WIKI_BERRY,
 		.market_price = 20,
@@ -2478,7 +2473,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 145.
-	{    
+	{
 		.name = _("MAGO BERRY"),
 		.index = ITEM_MAGO_BERRY,
 		.market_price = 20,
@@ -2495,7 +2490,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 146.
-	{    
+	{
 		.name = _("AGUAV BERRY"),
 		.index = ITEM_AGUAV_BERRY,
 		.market_price = 20,
@@ -2512,7 +2507,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 147.
-	{    
+	{
 		.name = _("IAPAPA BERRY"),
 		.index = ITEM_IAPAPA_BERRY,
 		.market_price = 20,
@@ -2529,7 +2524,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 148.
-	{    
+	{
 		.name = _("RAZZ BERRY"),
 		.index = ITEM_RAZZ_BERRY,
 		.market_price = 20,
@@ -2546,7 +2541,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 149.
-	{    
+	{
 		.name = _("BLUK BERRY"),
 		.index = ITEM_BLUK_BERRY,
 		.market_price = 20,
@@ -2563,7 +2558,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 150.
-	{    
+	{
 		.name = _("NANAB BERRY"),
 		.index = ITEM_NANAB_BERRY,
 		.market_price = 20,
@@ -2580,7 +2575,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 151.
-	{    
+	{
 		.name = _("WEPEAR BERRY"),
 		.index = ITEM_WEPEAR_BERRY,
 		.market_price = 20,
@@ -2597,7 +2592,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 152.
-	{    
+	{
 		.name = _("PINAP BERRY"),
 		.index = ITEM_PINAP_BERRY,
 		.market_price = 20,
@@ -2614,7 +2609,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 153.
-	{    
+	{
 		.name = _("POMEG BERRY"),
 		.index = ITEM_POMEG_BERRY,
 		.market_price = 20,
@@ -2631,7 +2626,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 154.
-	{    
+	{
 		.name = _("KELPSY BERRY"),
 		.index = ITEM_KELPSY_BERRY,
 		.market_price = 20,
@@ -2648,7 +2643,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 155.
-	{    
+	{
 		.name = _("QUALOT BERRY"),
 		.index = ITEM_QUALOT_BERRY,
 		.market_price = 20,
@@ -2665,7 +2660,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 156.
-	{    
+	{
 		.name = _("HONDEW BERRY"),
 		.index = ITEM_HONDEW_BERRY,
 		.market_price = 20,
@@ -2682,7 +2677,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 157.
-	{    
+	{
 		.name = _("GREPA BERRY"),
 		.index = ITEM_GREPA_BERRY,
 		.market_price = 20,
@@ -2699,7 +2694,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 158.
-	{    
+	{
 		.name = _("TAMATO BERRY"),
 		.index = ITEM_TAMATO_BERRY,
 		.market_price = 20,
@@ -2716,7 +2711,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 159.
-	{    
+	{
 		.name = _("CORNN BERRY"),
 		.index = ITEM_CORNN_BERRY,
 		.market_price = 20,
@@ -2733,7 +2728,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 160.
-	{    
+	{
 		.name = _("MAGOST BERRY"),
 		.index = ITEM_MAGOST_BERRY,
 		.market_price = 20,
@@ -2750,7 +2745,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 161.
-	{    
+	{
 		.name = _("RABUTA BERRY"),
 		.index = ITEM_RABUTA_BERRY,
 		.market_price = 20,
@@ -2767,7 +2762,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 162.
-	{    
+	{
 		.name = _("NOMEL BERRY"),
 		.index = ITEM_NOMEL_BERRY,
 		.market_price = 20,
@@ -2784,7 +2779,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 163.
-	{    
+	{
 		.name = _("SPELON BERRY"),
 		.index = ITEM_SPELON_BERRY,
 		.market_price = 20,
@@ -2801,7 +2796,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 164.
-	{    
+	{
 		.name = _("PAMTRE BERRY"),
 		.index = ITEM_PAMTRE_BERRY,
 		.market_price = 20,
@@ -2818,7 +2813,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 165.
-	{    
+	{
 		.name = _("WATMEL BERRY"),
 		.index = ITEM_WATMEL_BERRY,
 		.market_price = 20,
@@ -2835,7 +2830,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 166.
-	{    
+	{
 		.name = _("DURIN BERRY"),
 		.index = ITEM_DURIN_BERRY,
 		.market_price = 20,
@@ -2852,7 +2847,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 167.
-	{    
+	{
 		.name = _("BELUE BERRY"),
 		.index = ITEM_BELUE_BERRY,
 		.market_price = 20,
@@ -2869,7 +2864,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 168.
-	{    
+	{
 		.name = _("LIECHI BERRY"),
 		.index = ITEM_LIECHI_BERRY,
 		.market_price = 20,
@@ -2886,7 +2881,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 169.
-	{    
+	{
 		.name = _("GANLON BERRY"),
 		.index = ITEM_GANLON_BERRY,
 		.market_price = 20,
@@ -2903,7 +2898,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 170.
-	{    
+	{
 		.name = _("SALAC BERRY"),
 		.index = ITEM_SALAC_BERRY,
 		.market_price = 20,
@@ -2920,7 +2915,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 171.
-	{    
+	{
 		.name = _("PETAYA BERRY"),
 		.index = ITEM_PETAYA_BERRY,
 		.market_price = 20,
@@ -2937,7 +2932,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 172.
-	{    
+	{
 		.name = _("APICOT BERRY"),
 		.index = ITEM_APICOT_BERRY,
 		.market_price = 20,
@@ -2954,7 +2949,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 173.
-	{    
+	{
 		.name = _("LANSAT BERRY"),
 		.index = ITEM_LANSAT_BERRY,
 		.market_price = 20,
@@ -2971,7 +2966,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 174.
-	{    
+	{
 		.name = _("STARF BERRY"),
 		.index = ITEM_STARF_BERRY,
 		.market_price = 20,
@@ -2988,7 +2983,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 175.
-	{    
+	{
 		.name = _("ENIGMA BERRY"),
 		.index = ITEM_ENIGMA_BERRY,
 		.market_price = 20,
@@ -3005,7 +3000,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 176.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -3022,7 +3017,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 177.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -3039,7 +3034,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 178.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -3056,7 +3051,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 179.
-	{    
+	{
 		.name = _("BRIGHTPOWDER"),
 		.index = ITEM_BRIGHT_POWDER,
 		.market_price = 10,
@@ -3073,7 +3068,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 180.
-	{    
+	{
 		.name = _("WHITE HERB"),
 		.index = ITEM_WHITE_HERB,
 		.market_price = 100,
@@ -3090,7 +3085,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 181.
-	{    
+	{
 		.name = _("MACHO BRACE"),
 		.index = ITEM_MACHO_BRACE,
 		.market_price = 3000,
@@ -3107,7 +3102,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 182.
-	{    
+	{
 		.name = _("EXP. SHARE"),
 		.index = ITEM_EXP_SHARE,
 		.market_price = 3000,
@@ -3124,7 +3119,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 183.
-	{    
+	{
 		.name = _("QUICK CLAW"),
 		.index = ITEM_QUICK_CLAW,
 		.market_price = 100,
@@ -3141,7 +3136,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 184.
-	{    
+	{
 		.name = _("SOOTHE BELL"),
 		.index = ITEM_SOOTHE_BELL,
 		.market_price = 100,
@@ -3158,7 +3153,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 185.
-	{    
+	{
 		.name = _("MENTAL HERB"),
 		.index = ITEM_MENTAL_HERB,
 		.market_price = 100,
@@ -3175,7 +3170,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 186.
-	{    
+	{
 		.name = _("CHOICE BAND"),
 		.index = ITEM_CHOICE_BAND,
 		.market_price = 100,
@@ -3192,7 +3187,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 187.
-	{    
+	{
 		.name = _("KING‘S ROCK"),
 		.index = ITEM_KINGS_ROCK,
 		.market_price = 100,
@@ -3209,7 +3204,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 188.
-	{    
+	{
 		.name = _("SILVERPOWDER"),
 		.index = ITEM_SILVER_POWDER,
 		.market_price = 100,
@@ -3226,7 +3221,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 189.
-	{    
+	{
 		.name = _("AMULET COIN"),
 		.index = ITEM_AMULET_COIN,
 		.market_price = 100,
@@ -3243,7 +3238,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 190.
-	{    
+	{
 		.name = _("CLEANSE TAG"),
 		.index = ITEM_CLEANSE_TAG,
 		.market_price = 200,
@@ -3260,7 +3255,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 191.
-	{    
+	{
 		.name = _("SOUL DEW"),
 		.index = ITEM_SOUL_DEW,
 		.market_price = 200,
@@ -3277,7 +3272,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 192.
-	{    
+	{
 		.name = _("DEEPSEATOOTH"),
 		.index = ITEM_DEEP_SEA_TOOTH,
 		.market_price = 200,
@@ -3294,7 +3289,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 193.
-	{    
+	{
 		.name = _("DEEPSEASCALE"),
 		.index = ITEM_DEEP_SEA_SCALE,
 		.market_price = 200,
@@ -3311,7 +3306,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 194.
-	{    
+	{
 		.name = _("SMOKE BALL"),
 		.index = ITEM_SMOKE_BALL,
 		.market_price = 200,
@@ -3328,7 +3323,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 195.
-	{    
+	{
 		.name = _("EVERSTONE"),
 		.index = ITEM_EVERSTONE,
 		.market_price = 200,
@@ -3345,7 +3340,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 196.
-	{    
+	{
 		.name = _("FOCUS BAND"),
 		.index = ITEM_FOCUS_BAND,
 		.market_price = 200,
@@ -3362,7 +3357,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 197.
-	{    
+	{
 		.name = _("LUCKY EGG"),
 		.index = ITEM_LUCKY_EGG,
 		.market_price = 200,
@@ -3379,7 +3374,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 198.
-	{    
+	{
 		.name = _("SCOPE LENS"),
 		.index = ITEM_SCOPE_LENS,
 		.market_price = 200,
@@ -3396,7 +3391,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 199.
-	{    
+	{
 		.name = _("METAL COAT"),
 		.index = ITEM_METAL_COAT,
 		.market_price = 100,
@@ -3413,7 +3408,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 200.
-	{    
+	{
 		.name = _("LEFTOVERS"),
 		.index = ITEM_LEFTOVERS,
 		.market_price = 200,
@@ -3430,7 +3425,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 201.
-	{    
+	{
 		.name = _("DRAGON SCALE"),
 		.index = ITEM_DRAGON_SCALE,
 		.market_price = 2100,
@@ -3447,7 +3442,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 202.
-	{    
+	{
 		.name = _("LIGHT BALL"),
 		.index = ITEM_LIGHT_BALL,
 		.market_price = 100,
@@ -3464,7 +3459,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 203.
-	{    
+	{
 		.name = _("SOFT SAND"),
 		.index = ITEM_SOFT_SAND,
 		.market_price = 100,
@@ -3481,7 +3476,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 204.
-	{    
+	{
 		.name = _("HARD STONE"),
 		.index = ITEM_HARD_STONE,
 		.market_price = 100,
@@ -3498,7 +3493,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 205.
-	{    
+	{
 		.name = _("MIRACLE SEED"),
 		.index = ITEM_MIRACLE_SEED,
 		.market_price = 100,
@@ -3515,7 +3510,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 206.
-	{    
+	{
 		.name = _("BLACKGLASSES"),
 		.index = ITEM_BLACK_GLASSES,
 		.market_price = 100,
@@ -3532,7 +3527,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 207.
-	{    
+	{
 		.name = _("BLACK BELT"),
 		.index = ITEM_BLACK_BELT,
 		.market_price = 100,
@@ -3549,7 +3544,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 208.
-	{    
+	{
 		.name = _("MAGNET"),
 		.index = ITEM_MAGNET,
 		.market_price = 100,
@@ -3566,7 +3561,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 209.
-	{    
+	{
 		.name = _("MYSTIC WATER"),
 		.index = ITEM_MYSTIC_WATER,
 		.market_price = 100,
@@ -3583,7 +3578,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 210.
-	{    
+	{
 		.name = _("SHARP BEAK"),
 		.index = ITEM_SHARP_BEAK,
 		.market_price = 100,
@@ -3600,7 +3595,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 211.
-	{    
+	{
 		.name = _("POISON BARB"),
 		.index = ITEM_POISON_BARB,
 		.market_price = 100,
@@ -3617,7 +3612,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 212.
-	{    
+	{
 		.name = _("NEVERMELTICE"),
 		.index = ITEM_NEVER_MELT_ICE,
 		.market_price = 100,
@@ -3634,7 +3629,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 213.
-	{    
+	{
 		.name = _("SPELL TAG"),
 		.index = ITEM_SPELL_TAG,
 		.market_price = 100,
@@ -3651,7 +3646,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 214.
-	{    
+	{
 		.name = _("TWISTEDSPOON"),
 		.index = ITEM_TWISTED_SPOON,
 		.market_price = 100,
@@ -3668,7 +3663,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 215.
-	{    
+	{
 		.name = _("CHARCOAL"),
 		.index = ITEM_CHARCOAL,
 		.market_price = 9800,
@@ -3685,7 +3680,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 216.
-	{    
+	{
 		.name = _("DRAGON FANG"),
 		.index = ITEM_DRAGON_FANG,
 		.market_price = 100,
@@ -3702,7 +3697,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 217.
-	{    
+	{
 		.name = _("SILK SCARF"),
 		.index = ITEM_SILK_SCARF,
 		.market_price = 100,
@@ -3719,7 +3714,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 218.
-	{    
+	{
 		.name = _("UP-GRADE"),
 		.index = ITEM_UP_GRADE,
 		.market_price = 2100,
@@ -3736,7 +3731,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 219.
-	{    
+	{
 		.name = _("SHELL BELL"),
 		.index = ITEM_SHELL_BELL,
 		.market_price = 200,
@@ -3753,7 +3748,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 220.
-	{    
+	{
 		.name = _("SEA INCENSE"),
 		.index = ITEM_SEA_INCENSE,
 		.market_price = 9600,
@@ -3770,7 +3765,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 221.
-	{    
+	{
 		.name = _("LAX INCENSE"),
 		.index = ITEM_LAX_INCENSE,
 		.market_price = 9600,
@@ -3787,7 +3782,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 222.
-	{    
+	{
 		.name = _("LUCKY PUNCH"),
 		.index = ITEM_LUCKY_PUNCH,
 		.market_price = 10,
@@ -3804,7 +3799,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 223.
-	{    
+	{
 		.name = _("METAL POWDER"),
 		.index = ITEM_METAL_POWDER,
 		.market_price = 10,
@@ -3821,7 +3816,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 224.
-	{    
+	{
 		.name = _("THICK CLUB"),
 		.index = ITEM_THICK_CLUB,
 		.market_price = 500,
@@ -3838,7 +3833,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 225.
-	{    
+	{
 		.name = _("STICK"),
 		.index = ITEM_STICK,
 		.market_price = 200,
@@ -3855,7 +3850,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 226.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -3872,7 +3867,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 227.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -3889,7 +3884,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 228.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -3906,7 +3901,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 229.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -3923,7 +3918,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 230.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -3940,7 +3935,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 231.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -3957,7 +3952,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 232.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -3974,7 +3969,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 233.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -3991,7 +3986,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 234.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4008,7 +4003,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 235.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4025,7 +4020,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 236.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4042,7 +4037,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 237.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4059,7 +4054,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 238.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4076,7 +4071,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 239.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4093,7 +4088,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 240.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4110,7 +4105,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 241.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4127,7 +4122,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 242.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4144,7 +4139,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 243.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4161,7 +4156,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 244.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4178,7 +4173,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 245.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4195,7 +4190,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 246.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4212,7 +4207,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 247.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4229,7 +4224,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 248.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4246,7 +4241,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 249.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4263,7 +4258,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 250.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4280,7 +4275,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 251.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4297,7 +4292,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 252.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4314,7 +4309,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 253.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4331,7 +4326,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 254.
-	{    
+	{
 		.name = _("RED SCARF"),
 		.index = ITEM_RED_SCARF,
 		.market_price = 100,
@@ -4348,7 +4343,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 255.
-	{    
+	{
 		.name = _("BLUE SCARF"),
 		.index = ITEM_BLUE_SCARF,
 		.market_price = 100,
@@ -4365,7 +4360,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 256.
-	{    
+	{
 		.name = _("PINK SCARF"),
 		.index = ITEM_PINK_SCARF,
 		.market_price = 100,
@@ -4382,7 +4377,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 257.
-	{    
+	{
 		.name = _("GREEN SCARF"),
 		.index = ITEM_GREEN_SCARF,
 		.market_price = 100,
@@ -4399,7 +4394,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 258.
-	{    
+	{
 		.name = _("YELLOW SCARF"),
 		.index = ITEM_YELLOW_SCARF,
 		.market_price = 100,
@@ -4416,7 +4411,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 259.
-	{    
+	{
 		.name = _("MACH BIKE"),
 		.index = ITEM_MACH_BIKE,
 		.market_price = 0,
@@ -4433,7 +4428,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 260.
-	{    
+	{
 		.name = _("COIN CASE"),
 		.index = ITEM_COIN_CASE,
 		.market_price = 0,
@@ -4450,7 +4445,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 261.
-	{    
+	{
 		.name = _("ITEMFINDER"),
 		.index = ITEM_ITEMFINDER,
 		.market_price = 0,
@@ -4467,7 +4462,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 262.
-	{    
+	{
 		.name = _("OLD ROD"),
 		.index = ITEM_OLD_ROD,
 		.market_price = 0,
@@ -4484,7 +4479,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 263.
-	{    
+	{
 		.name = _("GOOD ROD"),
 		.index = ITEM_GOOD_ROD,
 		.market_price = 0,
@@ -4501,7 +4496,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 1,
 	},
 	// 264.
-	{    
+	{
 		.name = _("SUPER ROD"),
 		.index = ITEM_SUPER_ROD,
 		.market_price = 0,
@@ -4518,7 +4513,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 2,
 	},
 	// 265.
-	{    
+	{
 		.name = _("S.S. TICKET"),
 		.index = ITEM_SS_TICKET,
 		.market_price = 0,
@@ -4535,7 +4530,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 266.
-	{    
+	{
 		.name = _("CONTEST PASS"),
 		.index = ITEM_CONTEST_PASS,
 		.market_price = 0,
@@ -4552,7 +4547,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 267.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -4569,7 +4564,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 268.
-	{    
+	{
 		.name = _("WAILMER PAIL"),
 		.index = ITEM_WAILMER_PAIL,
 		.market_price = 0,
@@ -4586,7 +4581,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 269.
-	{    
+	{
 		.name = _("DEVON GOODS"),
 		.index = ITEM_DEVON_GOODS,
 		.market_price = 0,
@@ -4603,7 +4598,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 270.
-	{    
+	{
 		.name = _("SOOT SACK"),
 		.index = ITEM_SOOT_SACK,
 		.market_price = 0,
@@ -4620,7 +4615,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 271.
-	{    
+	{
 		.name = _("BASEMENT KEY"),
 		.index = ITEM_BASEMENT_KEY,
 		.market_price = 0,
@@ -4637,7 +4632,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 272.
-	{    
+	{
 		.name = _("ACRO BIKE"),
 		.index = ITEM_ACRO_BIKE,
 		.market_price = 0,
@@ -4654,7 +4649,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 1,
 	},
 	// 273.
-	{    
+	{
 		.name = _("{POKEBLOCK} CASE"),
 		.index = ITEM_POKEBLOCK_CASE,
 		.market_price = 0,
@@ -4671,7 +4666,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 274.
-	{    
+	{
 		.name = _("LETTER"),
 		.index = ITEM_LETTER,
 		.market_price = 0,
@@ -4688,7 +4683,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 275.
-	{    
+	{
 		.name = _("EON TICKET"),
 		.index = ITEM_EON_TICKET,
 		.market_price = 0,
@@ -4705,7 +4700,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 1,
 	},
 	// 276.
-	{    
+	{
 		.name = _("RED ORB"),
 		.index = ITEM_RED_ORB,
 		.market_price = 0,
@@ -4722,7 +4717,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 277.
-	{    
+	{
 		.name = _("BLUE ORB"),
 		.index = ITEM_BLUE_ORB,
 		.market_price = 0,
@@ -4739,7 +4734,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 278.
-	{    
+	{
 		.name = _("SCANNER"),
 		.index = ITEM_SCANNER,
 		.market_price = 0,
@@ -4756,7 +4751,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 279.
-	{    
+	{
 		.name = _("GO-GOGGLES"),
 		.index = ITEM_GO_GOGGLES,
 		.market_price = 0,
@@ -4773,7 +4768,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 280.
-	{    
+	{
 		.name = _("METEORITE"),
 		.index = ITEM_METEORITE,
 		.market_price = 0,
@@ -4790,7 +4785,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 281.
-	{    
+	{
 		.name = _("RM. 1 KEY"),
 		.index = ITEM_ROOM_1_KEY,
 		.market_price = 0,
@@ -4807,7 +4802,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 282.
-	{    
+	{
 		.name = _("RM. 2 KEY"),
 		.index = ITEM_ROOM_2_KEY,
 		.market_price = 0,
@@ -4824,7 +4819,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 283.
-	{    
+	{
 		.name = _("RM. 4 KEY"),
 		.index = ITEM_ROOM_4_KEY,
 		.market_price = 0,
@@ -4841,7 +4836,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 284.
-	{    
+	{
 		.name = _("RM. 6 KEY"),
 		.index = ITEM_ROOM_6_KEY,
 		.market_price = 0,
@@ -4858,7 +4853,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 285.
-	{    
+	{
 		.name = _("STORAGE KEY"),
 		.index = ITEM_STORAGE_KEY,
 		.market_price = 0,
@@ -4875,7 +4870,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 286.
-	{    
+	{
 		.name = _("ROOT FOSSIL"),
 		.index = ITEM_ROOT_FOSSIL,
 		.market_price = 0,
@@ -4892,7 +4887,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 287.
-	{    
+	{
 		.name = _("CLAW FOSSIL"),
 		.index = ITEM_CLAW_FOSSIL,
 		.market_price = 0,
@@ -4909,7 +4904,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 288.
-	{    
+	{
 		.name = _("DEVON SCOPE"),
 		.index = ITEM_DEVON_SCOPE,
 		.market_price = 0,
@@ -4926,7 +4921,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 289.
-	{    
+	{
 		.name = _("TM01"),
 		.index = ITEM_TM01,
 		.market_price = 3000,
@@ -4943,7 +4938,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 290.
-	{    
+	{
 		.name = _("TM02"),
 		.index = ITEM_TM02,
 		.market_price = 3000,
@@ -4960,7 +4955,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 291.
-	{    
+	{
 		.name = _("TM03"),
 		.index = ITEM_TM03,
 		.market_price = 3000,
@@ -4977,7 +4972,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 292.
-	{    
+	{
 		.name = _("TM04"),
 		.index = ITEM_TM04,
 		.market_price = 3000,
@@ -4994,7 +4989,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 293.
-	{    
+	{
 		.name = _("TM05"),
 		.index = ITEM_TM05,
 		.market_price = 1000,
@@ -5011,7 +5006,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 294.
-	{    
+	{
 		.name = _("TM06"),
 		.index = ITEM_TM06,
 		.market_price = 3000,
@@ -5028,7 +5023,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 295.
-	{    
+	{
 		.name = _("TM07"),
 		.index = ITEM_TM07,
 		.market_price = 3000,
@@ -5045,7 +5040,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 296.
-	{    
+	{
 		.name = _("TM08"),
 		.index = ITEM_TM08,
 		.market_price = 3000,
@@ -5062,7 +5057,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 297.
-	{    
+	{
 		.name = _("TM09"),
 		.index = ITEM_TM09,
 		.market_price = 3000,
@@ -5079,7 +5074,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 298.
-	{    
+	{
 		.name = _("TM10"),
 		.index = ITEM_TM10,
 		.market_price = 3000,
@@ -5096,7 +5091,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 299.
-	{    
+	{
 		.name = _("TM11"),
 		.index = ITEM_TM11,
 		.market_price = 2000,
@@ -5113,7 +5108,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 300.
-	{    
+	{
 		.name = _("TM12"),
 		.index = ITEM_TM12,
 		.market_price = 3000,
@@ -5130,7 +5125,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 301.
-	{    
+	{
 		.name = _("TM13"),
 		.index = ITEM_TM13,
 		.market_price = 3000,
@@ -5147,7 +5142,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 302.
-	{    
+	{
 		.name = _("TM14"),
 		.index = ITEM_TM14,
 		.market_price = 5500,
@@ -5164,7 +5159,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 303.
-	{    
+	{
 		.name = _("TM15"),
 		.index = ITEM_TM15,
 		.market_price = 7500,
@@ -5181,7 +5176,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 304.
-	{    
+	{
 		.name = _("TM16"),
 		.index = ITEM_TM16,
 		.market_price = 3000,
@@ -5198,7 +5193,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 305.
-	{    
+	{
 		.name = _("TM17"),
 		.index = ITEM_TM17,
 		.market_price = 3000,
@@ -5215,7 +5210,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 306.
-	{    
+	{
 		.name = _("TM18"),
 		.index = ITEM_TM18,
 		.market_price = 2000,
@@ -5232,7 +5227,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 307.
-	{    
+	{
 		.name = _("TM19"),
 		.index = ITEM_TM19,
 		.market_price = 3000,
@@ -5249,7 +5244,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 308.
-	{    
+	{
 		.name = _("TM20"),
 		.index = ITEM_TM20,
 		.market_price = 3000,
@@ -5266,7 +5261,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 309.
-	{    
+	{
 		.name = _("TM21"),
 		.index = ITEM_TM21,
 		.market_price = 1000,
@@ -5283,7 +5278,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 310.
-	{    
+	{
 		.name = _("TM22"),
 		.index = ITEM_TM22,
 		.market_price = 3000,
@@ -5300,7 +5295,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 311.
-	{    
+	{
 		.name = _("TM23"),
 		.index = ITEM_TM23,
 		.market_price = 3000,
@@ -5317,7 +5312,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 312.
-	{    
+	{
 		.name = _("TM24"),
 		.index = ITEM_TM24,
 		.market_price = 3000,
@@ -5334,7 +5329,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 313.
-	{    
+	{
 		.name = _("TM25"),
 		.index = ITEM_TM25,
 		.market_price = 5500,
@@ -5351,7 +5346,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 314.
-	{    
+	{
 		.name = _("TM26"),
 		.index = ITEM_TM26,
 		.market_price = 3000,
@@ -5368,7 +5363,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 315.
-	{    
+	{
 		.name = _("TM27"),
 		.index = ITEM_TM27,
 		.market_price = 1000,
@@ -5385,7 +5380,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 316.
-	{    
+	{
 		.name = _("TM28"),
 		.index = ITEM_TM28,
 		.market_price = 2000,
@@ -5402,7 +5397,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 317.
-	{    
+	{
 		.name = _("TM29"),
 		.index = ITEM_TM29,
 		.market_price = 2000,
@@ -5419,7 +5414,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 318.
-	{    
+	{
 		.name = _("TM30"),
 		.index = ITEM_TM30,
 		.market_price = 3000,
@@ -5436,7 +5431,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 319.
-	{    
+	{
 		.name = _("TM31"),
 		.index = ITEM_TM31,
 		.market_price = 3000,
@@ -5453,7 +5448,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 320.
-	{    
+	{
 		.name = _("TM32"),
 		.index = ITEM_TM32,
 		.market_price = 2000,
@@ -5470,7 +5465,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 321.
-	{    
+	{
 		.name = _("TM33"),
 		.index = ITEM_TM33,
 		.market_price = 3000,
@@ -5487,7 +5482,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 322.
-	{    
+	{
 		.name = _("TM34"),
 		.index = ITEM_TM34,
 		.market_price = 3000,
@@ -5504,7 +5499,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 323.
-	{    
+	{
 		.name = _("TM35"),
 		.index = ITEM_TM35,
 		.market_price = 3000,
@@ -5521,7 +5516,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 324.
-	{    
+	{
 		.name = _("TM36"),
 		.index = ITEM_TM36,
 		.market_price = 1000,
@@ -5538,7 +5533,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 325.
-	{    
+	{
 		.name = _("TM37"),
 		.index = ITEM_TM37,
 		.market_price = 2000,
@@ -5555,7 +5550,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 326.
-	{    
+	{
 		.name = _("TM38"),
 		.index = ITEM_TM38,
 		.market_price = 5500,
@@ -5572,7 +5567,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 327.
-	{    
+	{
 		.name = _("TM39"),
 		.index = ITEM_TM39,
 		.market_price = 3000,
@@ -5589,7 +5584,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 328.
-	{    
+	{
 		.name = _("TM40"),
 		.index = ITEM_TM40,
 		.market_price = 3000,
@@ -5606,7 +5601,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 329.
-	{    
+	{
 		.name = _("TM41"),
 		.index = ITEM_TM41,
 		.market_price = 3000,
@@ -5623,7 +5618,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 330.
-	{    
+	{
 		.name = _("TM42"),
 		.index = ITEM_TM42,
 		.market_price = 3000,
@@ -5640,7 +5635,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 331.
-	{    
+	{
 		.name = _("TM43"),
 		.index = ITEM_TM43,
 		.market_price = 3000,
@@ -5657,7 +5652,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 332.
-	{    
+	{
 		.name = _("TM44"),
 		.index = ITEM_TM44,
 		.market_price = 3000,
@@ -5674,7 +5669,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 333.
-	{    
+	{
 		.name = _("TM45"),
 		.index = ITEM_TM45,
 		.market_price = 3000,
@@ -5691,7 +5686,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 334.
-	{    
+	{
 		.name = _("TM46"),
 		.index = ITEM_TM46,
 		.market_price = 3000,
@@ -5708,7 +5703,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 335.
-	{    
+	{
 		.name = _("TM47"),
 		.index = ITEM_TM47,
 		.market_price = 3000,
@@ -5725,7 +5720,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 336.
-	{    
+	{
 		.name = _("TM48"),
 		.index = ITEM_TM48,
 		.market_price = 3000,
@@ -5742,7 +5737,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 337.
-	{    
+	{
 		.name = _("TM49"),
 		.index = ITEM_TM49,
 		.market_price = 3000,
@@ -5759,7 +5754,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 338.
-	{    
+	{
 		.name = _("TM50"),
 		.index = ITEM_TM50,
 		.market_price = 3000,
@@ -5776,7 +5771,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 339.
-	{    
+	{
 		.name = _("HM01"),
 		.index = ITEM_HM01,
 		.market_price = 0,
@@ -5793,7 +5788,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 340.
-	{    
+	{
 		.name = _("HM02"),
 		.index = ITEM_HM02,
 		.market_price = 0,
@@ -5810,7 +5805,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 341.
-	{    
+	{
 		.name = _("HM03"),
 		.index = ITEM_HM03,
 		.market_price = 0,
@@ -5827,7 +5822,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 342.
-	{    
+	{
 		.name = _("HM04"),
 		.index = ITEM_HM04,
 		.market_price = 0,
@@ -5844,7 +5839,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 343.
-	{    
+	{
 		.name = _("HM05"),
 		.index = ITEM_HM05,
 		.market_price = 0,
@@ -5861,7 +5856,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 344.
-	{    
+	{
 		.name = _("HM06"),
 		.index = ITEM_HM06,
 		.market_price = 0,
@@ -5878,7 +5873,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 345.
-	{    
+	{
 		.name = _("HM07"),
 		.index = ITEM_HM07,
 		.market_price = 0,
@@ -5895,7 +5890,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 346.
-	{    
+	{
 		.name = _("HM08"),
 		.index = ITEM_HM08,
 		.market_price = 0,
@@ -5912,7 +5907,7 @@ struct ItemData item_table[ALL_ITEMS] =
 		.extra_param = 0,
 	},
 	// 347.
-	{    
+	{
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,
@@ -5930,7 +5925,7 @@ struct ItemData item_table[ALL_ITEMS] =
 	},
 
     [348 ... ALL_ITEMS-1] =
-    {    
+    {
 		.name = _("????????"),
 		.index = ITEM_NONE,
 		.market_price = 0,

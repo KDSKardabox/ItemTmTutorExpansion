@@ -1,7 +1,6 @@
 #ifndef ITEM_IDS_H
 #define ITEM_IDS_H
 
-#include "types.h"
 
 enum Item {
     ITEM_NONE = 0x0,

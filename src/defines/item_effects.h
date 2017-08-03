@@ -1,5 +1,0 @@
-#ifndef ITEM_BATTLE_EFFECTS_H
-#define ITEM_BATTLE_EFFECTS_H
-
-
-#endif /* ITEM_BATTLE_EFFECTS_H_H */

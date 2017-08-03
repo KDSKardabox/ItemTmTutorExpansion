@@ -1,6 +1,5 @@
 
 #include "defines.h"
-#include "defines\types.h"
 
 
 struct imgpal

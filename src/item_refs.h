@@ -1,4 +1,6 @@
-#include "defines/types.h"
+#ifndef I_REFS
+#define I_REFS
+
 #define NULL ((void *)0)
 #define ItemUseOutOfBattle_Mail NULL
 #define ItemUseOutOfBattle_EnigmaBerry NULL
@@ -309,3 +311,5 @@ extern pchar gItemDescription_HM06[];
 extern pchar gItemDescription_HM07[];
 extern pchar gItemDescription_HM08[];
 extern pchar gItemDescription_Dummy[];
+
+#endif

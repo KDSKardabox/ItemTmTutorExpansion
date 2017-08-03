@@ -1,7 +1,6 @@
 #ifndef B_STRUCTS
 #define B_STRUCTS
 
-#include "defines.h"
 
 struct item_data{
     u16 itemID;

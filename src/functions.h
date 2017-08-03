@@ -1,9 +1,6 @@
 #ifndef VANILLA_FUNCTIONS
 #define VANILLA_FUNCTIONS
 
-#include "defines/types.h"
-#include "structs.h"
-
 u8 get_attributes(struct pokemon* poke_address, u8 request, void* destination);
 void buffer_item(u16 itemID, void* text_buffer);
 void* strcpy_xFF_terminated_0(void* dst, void* src);
