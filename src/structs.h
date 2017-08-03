@@ -1,7 +1,6 @@
 #ifndef B_STRUCTS
 #define B_STRUCTS
 
-#include "types.h"
 #include "defines.h"
 
 struct item_data{
@@ -173,22 +172,5 @@ struct image_resource{
 };
 
 extern struct object objects[64];
-
-struct item_struct
-{
-    u8 name[14];
-    u16 index;
-    u16 price;
-    u8 held_effect;
-    u8 held_effect_quality;
-    void *desc_pointer;
-    u16 mystery_value;
-    enum item_pocket pocket_no;
-    u8 type_of_item;
-    void *field_usage_code;
-    u32 battle_usage;
-    void *battle_usage_code;
-    u32 extra_param;
-};
 
 #endif /* B_STRUCTS */

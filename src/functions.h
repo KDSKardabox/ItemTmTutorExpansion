@@ -1,7 +1,7 @@
 #ifndef VANILLA_FUNCTIONS
 #define VANILLA_FUNCTIONS
 
-#include "types.h"
+#include "defines/types.h"
 #include "structs.h"
 
 u8 get_attributes(struct pokemon* poke_address, u8 request, void* destination);

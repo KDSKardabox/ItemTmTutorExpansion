@@ -7,6 +7,15 @@ script_text_buff2 = 0x02021DC4;
 move_name_table = 0x08000148;
 bag_items_ptrs = 0x02039DD8;
 var800E_last_used_item = 0x0203CE7C;
+/*battle recording*/
+no_of_recorded_bytes = 0x0203C794;
+battle_record = 0x0203BD34;
+viewing_recorded_battle = 0x0203C7AC;
+var_800D_lastresult = 0x020375F0;
+battle_some_link_id = 0x0203C7B4;
+battle_link_pbs = 0x020229E8;
+trainerclass_names = 0x0830FCD4;
+trainer_table = 0x08310030;
 
 get_item_quantity = 0x080D6554 | 1;
 fdecode_and_copy = 0x08008EE0 | 1;
@@ -30,7 +39,11 @@ sav3_ptr = 0x03005D94;
 dex_firstletter_table = 0x0856ED08;
 poke_name_table = 0x08000144;
 poke_basestats_table = 0x080001BC;
-
+crytable1_ptr = 0x080A35EC;
+crytable2_ptr = 0x0869EF24;
+script_text_buffer1 = 0x02021CC4;
+script_text_buffer2 = 0x02021DC4;
+script_text_buffer3 = 0x02021EC4;
 sav_get_checksum = 0x08153164|1;
 copy_flash_section = 0x0815314C|1;
 sub_8152908 = 0x08152908|1;
@@ -137,6 +150,7 @@ objID_pbs_moveanimations = 0x020241E4;
 tasks = 0x03005E00;
 var_8015_trainer_opponent_A = 0x02038BCA;
 trainer_opponent_B = 0x02038BCC;
+partner_trainer = 0x02038BCE;
 tasks_for_banks = 0x03005D60;
 graphical_elements_pbs = 0x03005D70;
 move_selection_chosen_target_pbs = 0x03005D74;
@@ -157,6 +171,8 @@ terrain_to_type_table = 0x0831C483;
 some_strings_table =  0x085CC834;
 protect_chance_table = 0x0831C3D8;
 
+int_to_str = 0x08008CC0|1;
+calc_total_move_pp = 0x0806B960|1;
 get_overworld_weather = 0x80AC30C|1;
 play_sound = 0x080A37A4|1;
 play_cry = 0x080A32E4|1;
@@ -167,6 +183,7 @@ get_item_x12_battle_function = 0x080D74DC|1;
 __udivsi3 = 0x082E7B68|1;
 __umodsi3 = 0x082E7BE0|1;
 gender_from_pid = 0x0806A020|1;
+poke_get_gender = 0x08069FC4|1;
 get_item_quality = 0x080D7500|1;
 count_alive_pokes_on_side = 0x08069DEC|1;
 ability_something = 0x08042828|1;
@@ -273,6 +290,7 @@ obj_delete_and_free_tiles = 0x80070E8|1;
 item_data_ptr_ptr = 0x80001C8;
 evo_table_ptr_ptr = 0x806D140;
 poke_stat_table_ptr_ptr = 0x80001BC;
+poke_name_table = 0x08000144;
 
 /*Expandable tables*/
 battle_strings_table = 0x085CC270;

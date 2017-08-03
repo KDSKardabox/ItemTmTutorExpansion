@@ -1,7 +1,7 @@
 #ifndef B_LOCATIONS
 #define B_LOCATIONS
 
-#include "types.h"
+#include "defines/types.h"
 #include "structs.h"
 
 u8 script_text_buff1[256];
