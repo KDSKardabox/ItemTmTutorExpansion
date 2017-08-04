@@ -277,20 +277,38 @@ ai_switch_sth3 = 0x08063364|1;
 ai_is_statbuffed = 0x0806331C|1;
 
 /*mega*/
-gpu_pal_obj_alloc_tag_and_apply = 0x8008744|1; 
-gpu_tile_obj_decompress_alloc_tag_and_upload = 0x8034530|1;
-template_instanciate_forward_search = 0x8006DF4|1;
-bx_move_chosing_menu = 0x08057BFC| 1;
-b_x = 0x3005D60;
-healthbox_obj_id_pbs = 0x3005D70;
-get_pingpong = 0x0806F534|1;
-palette_obj_faded = 0x02037D14;
-gpu_pal_tags_index_of = 0x8008804|1;
-obj_delete_and_free_tiles = 0x80070E8|1;
 item_data_ptr_ptr = 0x80001C8;
 evo_table_ptr_ptr = 0x806D140;
 poke_stat_table_ptr_ptr = 0x80001BC;
 poke_name_table = 0x08000144;
 
-/*Expandable tables*/
-battle_strings_table = 0x085CC270;
+
+/*Item Overworld Effects*/
+ItemUseOutOfBattle_Mail = 0x080FD278|1;
+ItemUseOutOfBattle_EnigmaBerry = 0x080FE650|1;
+ItemUseOutOfBattle_RareCandy = 0x080FDF2C|1;
+ItemUseOutOfBattle_PPUp = 0x080FDF11|1;
+ItemUseOutOfBattle_Repel = 0x080FE0BD|1;
+ItemUseOutOfBattle_EscapeRope = 0x080FE335|1;
+ItemUseOutOfBattle_PokeblockCase = 0x080FDB6D|1;
+ItemUseOutOfBattle_EvolutionStone = 0x080FE379|1;
+ItemUseOutOfBattle_WailmerPail = 0x080FDDA5|1;
+ItemUseOutOfBattle_CoinCase = 0x080FDC35|1;
+ItemUseOutOfBattle_Itemfinder = 0x080FD491|1;
+ItemUseOutOfBattle_Bike = 0x080FD299|1;
+ItemUseOutOfBattle_Rod = 0x080FD429|1;
+ItemUseOutOfBattle_CannotUse = 0x080FE820|1;
+ItemUseOutOfBattle_Medicine = 0x080FDEA0|1;
+ItemUseOutOfBattle_PPRecovery = 0x080FDEF4|1;
+ItemUseOutOfBattle_BlackWhiteFlute = 0x080FE235|1;
+ItemUseOutOfBattle_SacredAsh = 0x080FDED9|1;
+ItemUseOutOfBattle_TMHM = 0x080FDF49|1;
+
+/*Item In-Battle Effects*/
+ItemUseInBattle_PokeBall = 0x080FE394|1;
+ItemUseInBattle_Medicine = 0x080FE590|1;
+ItemUseInBattle_PPRecovery = 0x080FE5C8|1;
+ItemUseInBattle_StatIncrease = 0x080FE4B8|1;
+ItemUseInBattle_Escape = 0x080FE5E4|1;
+ItemUseInBattle_EnigmaBerry = 0x080FE77C|1;
+

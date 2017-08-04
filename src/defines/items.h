@@ -472,11 +472,11 @@ enum HOLD_EFFECTS
 
 enum ItemPocket {
     ITEM_POCKET_NONE,
-    ITEM_POCKET_KEY_ITEMS,
-    ITEM_POCKET_ITEMS,
-    ITEM_POCKET_POKE_BALLS,
-    ITEM_POCKET_BERRIES,
-    ITEM_POCKET_TM_HM,
+	ITEM_POCKET_ITEMS,
+	ITEM_POCKET_POKE_BALLS,
+	ITEM_POCKET_TM_HM,
+	ITEM_POCKET_BERRIES,
+    ITEM_POCKET_KEY_ITEMS,    
 };
 
 enum ItemGenericType {
@@ -529,7 +529,7 @@ struct ItemData {
     enum ItemPocket pocket;
     union ItemType type;
     TaskCallback overworld_routine;
-    u32 usage;
+    u8 usage;
     u8 field_21;
     u16 field_22;
     TaskCallback battle_routine;
