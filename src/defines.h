@@ -28,6 +28,7 @@
 #include "structs.h"
 #include "./defines/items.h"
 #include "./defines/pokes.h"
+#include "./defines/moves.h"
 #include "./defines/get_attr.h"
 #include "item_refs.h"
 #include "functions.h"
